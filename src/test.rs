@@ -1,10 +1,15 @@
 use crate::day::Solution;
+use crate::solutions::day01::SecretEntrance;
 
 // NOTE: do not remove the '// day x::' it will break importing the day with the cli.
 
 #[test]
 fn day_01() {
-    todo!(); // day 1::
+    let mut solution = SecretEntrance::new(include_str!("input/01_test.txt"));
+    println!("rotations: {:?}", solution.rotations);
+    assert_eq!(solution.rotations.len(), 10);
+    assert_eq!(solution.part_one(), 3);
+    assert_eq!(solution.part_two(), 6);
 }
 
 #[test]

@@ -1,3 +1,4 @@
+use solutions::day01::SecretEntrance;
 use crate::day::print_day;
 use std::env;
 
@@ -31,7 +32,7 @@ fn main() {
     };
 
     match number {
-        1 => todo!(),
+        1 => print_day(1, SecretEntrance::new(include_str!("input/01.txt"))),
         2 => todo!(),
         3 => todo!(),
         4 => todo!(),
