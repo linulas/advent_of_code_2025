@@ -1,5 +1,5 @@
 use solutions::day_02::GiftShop;
-use solutions::day01::SecretEntrance;
+use solutions::day_01::SecretEntrance;
 use crate::day::print_day;
 use std::env;
 
