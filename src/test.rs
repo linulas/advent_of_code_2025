@@ -1,5 +1,6 @@
 use crate::day::Solution;
 use crate::solutions::day01::SecretEntrance;
+use crate::solutions::day_02::GiftShop;
 
 // NOTE: do not remove the '// day x::' it will break importing the day with the cli.
 
@@ -14,7 +15,11 @@ fn day_01() {
 
 #[test]
 fn day_02() {
-    todo!(); // day 2::
+    let mut solution = GiftShop::new(include_str!("input/02_test.txt"));
+    println!("ranges: {:?}\n", solution.ranges);
+    assert_eq!(solution.ranges.len(), 11);
+    assert_eq!(solution.part_one(), 1227775554);
+    assert_eq!(solution.part_two(), 4174379265);
 }
 
 #[test]
