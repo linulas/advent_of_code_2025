@@ -1,3 +1,4 @@
+use solutions::day_03::EmergancyPower;
 use solutions::day_02::GiftShop;
 use solutions::day_01::SecretEntrance;
 use crate::day::print_day;
@@ -35,7 +36,7 @@ fn main() {
     match number {
         1 => print_day(1, SecretEntrance::new(include_str!("input/01.txt"))),
         2 => print_day(2, GiftShop::new(include_str!("input/02.txt"))),
-        3 => todo!(),
+        3 => print_day(3, EmergancyPower::new(include_str!("input/03.txt"))),
         4 => todo!(),
         5 => todo!(),
         6 => todo!(),
