@@ -2,6 +2,7 @@ use crate::day::Solution;
 use crate::solutions::day_01::SecretEntrance;
 use crate::solutions::day_02::GiftShop;
 use crate::solutions::day_03::EmergancyPower;
+use crate::solutions::day_04::PrintingDepartment;
 
 // NOTE: do not remove the '// day x::' it will break importing the day with the cli.
 
@@ -35,7 +36,13 @@ fn day_03() {
 
 #[test]
 fn day_04() {
-    todo!(); // day 4::
+    let mut solution = PrintingDepartment::new(include_str!("input/04_test.txt"));
+    println!("grid: {:?}\n", solution.grid);
+    assert_eq!(solution.grid.len(), 100);
+    assert_eq!(solution.count_adjecent((0, 0)), 2);
+    assert_eq!(solution.count_adjecent((1, 2)), 7);
+    assert_eq!(solution.part_one(), 13);
+    assert_eq!(solution.part_two(), 43);
 }
 
 #[test]
