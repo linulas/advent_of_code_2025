@@ -3,6 +3,7 @@ use crate::solutions::day_01::SecretEntrance;
 use crate::solutions::day_02::GiftShop;
 use crate::solutions::day_03::EmergancyPower;
 use crate::solutions::day_04::PrintingDepartment;
+use crate::solutions::day_05::Cafeteria;
 
 // NOTE: do not remove the '// day x::' it will break importing the day with the cli.
 
@@ -47,7 +48,13 @@ fn day_04() {
 
 #[test]
 fn day_05() {
-    todo!(); // day 5::
+    let mut solution = Cafeteria::new(include_str!("input/05_test.txt"));
+    println!("ranges: {:?}\n", solution.ranges);
+    println!("ingredients: {:?}\n", solution.ingredients);
+    assert_eq!(solution.ranges.len(), 4);
+    assert_eq!(solution.ingredients.len(), 6);
+    assert_eq!(solution.part_one(), 3);
+    assert_eq!(solution.part_two(), 14);
 }
 
 #[test]
