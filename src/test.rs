@@ -4,6 +4,7 @@ use crate::solutions::day_02::GiftShop;
 use crate::solutions::day_03::EmergancyPower;
 use crate::solutions::day_04::PrintingDepartment;
 use crate::solutions::day_05::Cafeteria;
+use crate::solutions::day_06::MathHomework;
 
 // NOTE: do not remove the '// day x::' it will break importing the day with the cli.
 
@@ -59,7 +60,10 @@ fn day_05() {
 
 #[test]
 fn day_06() {
-    todo!(); // day 6::
+    let mut solution = MathHomework::new(include_str!("input/06_test.txt"));
+    println!("problems: {:?}\n", solution.problems);
+    assert_eq!(solution.part_one(), 4277556);
+    assert_eq!(solution.part_two(), 3263827);
 }
 
 #[test]

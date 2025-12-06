@@ -1,3 +1,4 @@
+use solutions::day_06::MathHomework;
 use solutions::day_05::Cafeteria;
 use solutions::day_04::PrintingDepartment;
 use solutions::day_03::EmergancyPower;
@@ -41,7 +42,7 @@ fn main() {
         3 => print_day(3, EmergancyPower::new(include_str!("input/03.txt"))),
         4 => print_day(4, PrintingDepartment::new(include_str!("input/04.txt"))),
         5 => print_day(5, Cafeteria::new(include_str!("input/05.txt"))),
-        6 => todo!(),
+        6 => print_day(6, MathHomework::new(include_str!("input/06.txt"))),
         7 => todo!(),
         8 => todo!(),
         9 => todo!(),
