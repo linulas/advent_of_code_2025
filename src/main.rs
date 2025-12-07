@@ -1,10 +1,11 @@
-use solutions::day_06::MathHomework;
-use solutions::day_05::Cafeteria;
-use solutions::day_04::PrintingDepartment;
-use solutions::day_03::EmergancyPower;
-use solutions::day_02::GiftShop;
-use solutions::day_01::SecretEntrance;
 use crate::day::print_day;
+use solutions::day_01::SecretEntrance;
+use solutions::day_02::GiftShop;
+use solutions::day_03::EmergancyPower;
+use solutions::day_04::PrintingDepartment;
+use solutions::day_05::Cafeteria;
+use solutions::day_06::MathHomework;
+use solutions::day_07::TachyonManifolds;
 use std::env;
 
 #[cfg(test)]
@@ -43,7 +44,7 @@ fn main() {
         4 => print_day(4, PrintingDepartment::new(include_str!("input/04.txt"))),
         5 => print_day(5, Cafeteria::new(include_str!("input/05.txt"))),
         6 => print_day(6, MathHomework::new(include_str!("input/06.txt"))),
-        7 => todo!(),
+        7 => print_day(7, TachyonManifolds::new(include_str!("input/07.txt"))),
         8 => todo!(),
         9 => todo!(),
         10 => todo!(),
